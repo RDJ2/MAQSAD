@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> JavaScrpit object Demonstration</title>
+</head>
+<body>
+<h1> JavaScrpit String object Demonstration</h1>
+<script>
+const str = "Hello, JavaScrpit!";
+console.log("Orginial string :", str);
+console.log("length of the string", str.length);
+console.log("uppercase:", str.toUpperCase());
+console.log("lowercase:", str.toLowerCase());
+console.log("Substring(7,10):", str.substring(7,10));
+console.log("Replace 'JavaScrpit' with 'word':", str.replace('JavaScrpit', 'world'));
+</script>
+</body>
+</html>
