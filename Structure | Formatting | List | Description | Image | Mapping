@@ -1,0 +1,134 @@
+A]use of document structure tag
+
+<html>
+    <head>
+        <title>
+            my web page
+        </title>
+    </head>
+    <body>
+        <h1>
+            company name
+        </h1>
+        <p>
+            this is my first web page 
+        </p>
+
+    </body>
+</html>
+
+
+
+B]various text formatting tags
+
+<html>
+    <head>
+        <title>
+            Text Foematting Tags
+        </title>
+    </head>
+    <body>
+        <h1>
+            user name 
+        </h1>
+        <p><i>This is an example of paragraph tag
+        </i></p>
+        <p><b><i>
+            This is a line of para
+        </i></b></p>
+        <p><b>
+            This is a new para
+        </b></p><hr>
+        <p><u>
+            My First page 
+        </u></p>
+    </body>
+</html>
+
+
+
+C]list tags
+
+<html>
+    <head>
+        <title>
+            An ordered list
+        </title>
+    </head>
+    <body>
+        <h1>
+            user name 
+        </h1>
+        <p>An ordered list</p>
+        <ol type="2">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+        </ol>
+        <p>An unorder list
+        </p>
+        <ul>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+        </ul>
+     
+    </body>
+</html>
+
+
+
+C i]Discription tag
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            practical
+        </title>
+    </head>
+    <body>
+        <dl>
+            <dt>html</dt>
+            <dd>HYpertext markup language</dd>
+            <dt>Css</dt>
+            <dd>cascading styple sheets</dd>
+        </dl>
+    </body>
+</html>
+
+
+
+C ii] Image tag 
+
+<html>
+    <head>
+        <title>
+            image 
+        </title>
+        <h1> html image</h1>
+    </head>
+    <body>
+        <img src="photo path" 
+        alt="error 404" height="50%" width="30%">
+        
+    </body>
+</html>
+
+
+
+C iii] Image mapping
+
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Mapping with Multiple Areas</title>
+  </head>
+  <body>
+    <h1 >HTML Image Mapping with Multiple Areas</h1>
+    <img src="photo path" alt="Image with clickable areas" usemap="#imagemap">
+    <map name="imagemap">
+        <area shape="rect" coords="0,0,100,100" href="link">
+    </map>
+  </body>
+</html>
