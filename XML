@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="#inline"?>
+
+<!DOCTYPE books [
+	<!ELEMENT book (title, author, year)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT year (#PCDATA)>
+	<!ATTLIST xsl:stylesheet
+		id 	ID #REQUIRED>
+]>
+
+<books>
+	<book>
+		<title>The Great Gatsby</title>
+		<author>F. Scott Fitzgerald</author>
+		<year>1925</year>
+	</book>
+	<book>
+		<title>Atomic Habits</title>
+		<author>James Clear</author>
+		<year>2016</year>
+	</book>
+	<book>
+		<title>To Kill a Mockingbird</title>
+		<author>Harper Lee</author>
+		<year>1960</year>
+	</book>
+
+	<xsl:stylesheet version="1.0" id="inline" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+		<xsl:template match="/">
+			<html>
+				<head>
+					<style type="text/css">
+					<![CDATA[
+						body {
+							font-family: Arial, sans-serif;
+							margin: 20px;
+						}
+						h1 {
+							color: #2c3e50;
+						}
+						.book {
+							font-size: 20px;
+							border: 2px solid black;
+							margin: 10px 0;
+							padding: 10px;
+							background-color: #ecf0f1;
+							color: black;
+						}
+						.title {
+							font-weight: bold;
+							color: #e74c3c;
+						}
+						.author {
+							font-style: italic;
+							color: #2980b9;
+						}
+						.year {
+							color: #27ae60;
+						}
+					]]>
+					</style>
+				</head>
+				<body>
+					<xsl:apply-templates/>
+				</body>
+			</html>
+		</xsl:template>
+
+		<xsl:template match="book">
+			<div class="book">
+				<h1><xsl:apply-templates select="title"/></h1>
+				<div class="author"><xsl:apply-templates select="author"/></div>
+				<div class="year"><xsl:apply-templates select="year"/></div>
+			</div>
+		</xsl:template>
+
+		<xsl:template match="title">
+			<span class="title"><xsl:value-of select="."/></span>
+		</xsl:template>
+
+		<xsl:template match="author">
+			<span class="author"><xsl:value-of select="."/></span>
+		</xsl:template>
+
+		<xsl:template match="year">
+			<span class="year"><xsl:value-of select="."/></span>
+		</xsl:template>
+	</xsl:stylesheet>
+</books>
