@@ -1,0 +1,57 @@
+a]table tag
+
+<!DOCTYPE html>
+<head>
+    <title>
+        web page using Table Tag
+    </title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th align="left"> This is table headding</th>
+            <th > This is table headding</th>
+        </tr>
+        <tr>
+            <td width="300" height="59">This is table data</td>
+            <td> This is table data</td>
+        </tr>
+        <tr>
+            <td width="300" height="59"> This is table data</td>
+            <td>This is table data </td>
+        </tr>
+    </table>
+</body>
+</head>
+
+
+
+b]form filling tag
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+  </head>
+  <body>
+    <h1>Form Example</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+      
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" placeholder="Enter your surname"><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+      
+      <label for="telephone">Telephone:</label>
+      <input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone number"><br><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
